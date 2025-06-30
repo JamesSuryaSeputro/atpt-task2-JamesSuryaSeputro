@@ -1,7 +1,7 @@
 export interface IAirportApiClient {
-    getAirports: () => Promise<any>;
-    getAirportById: (id: string) => Promise<any>;
-    getAirportDistance:(fromIata: string, toIata: string) => Promise<any>;
+    getAirports(): Promise<any>;
+    getAirportById(id: string): Promise<any>;
+    getAirportDistance(fromIata: string, toIata: string): Promise<any>;
     getAllFavorites(): Promise<any>;
     getFavoriteById(id: string): Promise<any>;
     addFavorite(airportId: string): Promise<any>;
