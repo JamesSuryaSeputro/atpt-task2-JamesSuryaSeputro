@@ -1,4 +1,4 @@
-import { test, expect } from '../../../../fixtures/api';
+import { test, expect } from '../../../fixtures/api';
 
 test.describe.serial('Favorites API Operations', () => {
     test.beforeEach(async ({ airportApiClient }) => {
@@ -117,5 +117,9 @@ test.describe.serial('Favorites API Operations', () => {
         await expect(async () => {
             await airportApiClient.deleteFavorite(nonExistentId);
         }).rejects.toThrow(/Failed to delete favorite.*404/);
+    });
+
+        test.afterEach(async ({ airportApiClient }) => {
+            await airportApiClient.clearAllFavorites();
     });
 });

@@ -1,4 +1,4 @@
-import { test, expect } from '../../../../fixtures/api';
+import { test, expect } from '../../../fixtures/api';
 
 test.describe('POST Airport Distance', () => {
 

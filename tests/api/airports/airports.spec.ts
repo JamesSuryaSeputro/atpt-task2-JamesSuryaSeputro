@@ -1,4 +1,4 @@
-import { expect, test } from '../../../../fixtures/api';
+import { expect, test } from '../../../fixtures/api';
 
 test.describe('GET Aiports API', () => {
 
