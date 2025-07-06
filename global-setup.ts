@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 import * as path from 'path';
 
 // Explicitly specify the path to your .env file relative to the project root
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 async function globalSetup() {
     console.log('Running global setup: Obtaining token...');
